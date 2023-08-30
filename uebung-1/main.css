@@ -1,0 +1,127 @@
+/* *************************** *
+ * Der Inhalt von Main soll
+ * mittig auf der X-Achse 
+ * fließen. Wenn nicht genug
+ * Platz vorhanden ist, soll
+ * der Fluss auf der nächten
+ * Zeile fortgesetzt werden.
+ * *************************** */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main img{
+  width: 100px;
+}
+
+/* *************************** *
+ * Hier nix machen!!!!
+ * *************************** */
+
+main .a,
+main .b,
+main .c,
+main .d,
+main .e,
+main .f {
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px black;
+}
+
+/* *************************** *
+ * Der Inhalt soll von rechts
+ * nach links auf der X-Achse
+ * und von unten nach oben
+ * auf der Y-Achse fließen.
+ * *************************** */
+
+main .a{
+  background-color: lightseagreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* *************************** *
+ * Der Inhalt soll auf der 
+ * X-Achse mittig und auf der
+ * Y-Achse mittig fließen.
+ * *************************** */
+
+main .b {
+  background-color: lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *************************** *
+ * Der Inhalt soll auf der
+ * X-Achse mittig fließen und
+ * auf der Y-Achse von oben
+ * nach unten.
+ * *************************** */
+
+main .c{
+  background-color: lightyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* *************************** *
+ * Der Inhalt soll auf der 
+ * Y-Achse mittig fließen und
+ * auf der X-Achse gestreckt
+ * fließen.
+ * *************************** */
+
+main .d{
+  background-color: mistyrose;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* *************************** *
+ * Der Inhalt soll auf der 
+ * X-Achse für alle Elemente
+ * Leerraum auf der linken und
+ * rechten Seite haben und
+ * auf der Y-Achse mittig 
+ * fließen
+ * *************************** */
+
+main .e {
+  background-color: palegreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:  center;
+
+}
+/* *************************** *
+ * Der Inhalt soll auf der 
+ * Y-Achse unten und auf 
+ * der X-Achse von links
+ * nach rechts fließen.
+ * *************************** */
+
+main .f {
+  background-color: powderblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  align-items:  flex-end;
+}

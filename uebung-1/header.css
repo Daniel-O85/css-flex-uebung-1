@@ -1,0 +1,40 @@
+/* *************************** *
+ * Der Inhalt soll von rechts
+ * nach links fließen. Dabei
+ * soll die Höhe 160px sein und
+ * der Inhalt soll auf der Y-Achse
+ * mittig sein. Die Bilder haben
+ * eine Höhe von 80px und einen
+ * äußeren Abstand von 6px
+ * *************************** */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 160px;
+    align-items: center;
+    background-color: aqua;
+}
+
+/* *************************** *
+ * Wird in die zweite Reihe
+ * verschoben
+ * *************************** */
+
+header .h-1 {
+    order: 2;
+}
+
+/* *************************** *
+ * Wird in die erste Reihe
+ * verschoben
+ * *************************** */
+
+header .h-2 {
+    order: 1;
+}
+header img{
+    height: 80px;
+    margin: 6px;
+}
